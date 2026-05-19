@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#main-container {
+  display: flex;
+  gap: 25px;
+  padding: 30px;
+}
+
+#main-container > ul {
+  width: 50%;
+  list-style: none;
+}
+
+#main-container > ul > li {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+#main-container > ul > li:last-child {
+  margin-bottom: 0;
+}
+
+img {
+  border-radius: 8px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.dog-info {
+  line-height: 30px;
+  text-wrap: balance;
+  word-break: keep-all;
+}
+
+.dog-info > p {
+  display: flex;
+  gap: 10px;
+}
+
+.dog-info > p > span:first-child {
+  font-weight: 500;
+  color: #333;
+}
+
+#page-container {
+  height: 50px;
+}
+#page-container > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+#page-container > ul > li > a {
+  padding: 5px;
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+}

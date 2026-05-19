@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      {% for animal in animals %}
+      <li>
+        <img src="{{ animal.popfile1 }}" />
+        <div class="dog-info">
+          <p><span>견종</span><span>{{ animal.kindNm }}</span></p>
+          <p><span>발견장소</span> <span>{{ animal.happenPlace }}</span></p>
+          <p>
+            <span>성별</span
+            ><span> {{ '여' if animal.sexCd == 'F' else '남' }}</span>
+          </p>
+          <p>
+            <span>출생년도</span>
+            <span>{{ animal.age.replace('(년생)', '년생') }}</span>
+          </p>
+          <p><span>특징</span> <span>{{ animal.specialMark }}</span></p>
+          <p>
+            <span>몸무게</span
+            ><span> {{ animal.weight.replace("(Kg)", "kg")}}</span>
+          </p>
+          <p>
+            <span>중성화 여부</span>
+            <span>{{ 'O' if animal.neuterYn == 'Y' else 'X' }}</span>
+          </p>
+          <p><span>보호소</span> <span>{{ animal.careNm }}</span></p>
+          <p><span>연락처</span><span> {{ animal.careTel }}</span></p>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
