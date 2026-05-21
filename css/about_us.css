@@ -9,25 +9,24 @@ body {
   padding: 30px 100px;
 }
 
-#title-container {
-  > h1 {
-    color: #5c4331;
-    margin-bottom: 10px;
-  }
+h1,
+h2 {
+  color: #5c4331;
+  margin-bottom: 10px;
+}
 
+#title-container {
   > p {
     color: #a77f60;
+    margin-bottom: 30px;
   }
 }
 
 #campaign-container {
-  height: 600px;
-  margin-top: 50px;
-}
-
-.campaign-box {
   width: 1000px;
+  height: 600px;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .campaign {
@@ -38,7 +37,7 @@ body {
   font-weight: 700;
 
   padding: 30px 0;
-  margin: 0px 0 30px 30px;
+  margin: 15px 15px;
 
   width: 300px;
   border-radius: 10px;
@@ -50,4 +49,164 @@ body {
 
 .campaign:nth-child(1) {
   clear: both;
+}
+
+#support-container {
+  width: 916px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff7ed;
+  border-radius: 12px;
+}
+
+#support-content {
+  padding: 30px 0 50px 0;
+  > p {
+    font-weight: 600;
+    color: #a77f60;
+  }
+
+  > img {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+}
+
+#support-donation {
+  text-align: left;
+  margin-left: 76px;
+
+  > p {
+    margin-bottom: 16px;
+    font-weight: 600;
+    color: #5c4331;
+  }
+}
+
+#support-ammount {
+  margin-bottom: 50px;
+  font-size: 18px;
+
+  .hidden-checkbox {
+    display: none;
+    width: 150px;
+    height: 50px;
+  }
+
+  .hidden-checkbox:checked + label {
+    border: 2px solid #ccd67f;
+  }
+
+  > label {
+    display: inline-block;
+
+    margin-right: 15px;
+    padding: 15px 40px;
+
+    border: 1px solid #a77f60;
+    border-radius: 8px;
+
+    background-color: #fff;
+    color: #8a5f41;
+    vertical-align: top;
+  }
+
+  label > input {
+    text-align: center;
+    width: 154px;
+    height: 25px;
+    border: none;
+
+    color: #8a5f41;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  label > input::placeholder {
+    color: #8a5f41;
+  }
+
+  label > input:focus {
+    outline: none;
+  }
+
+  label:hover,
+  input:hover {
+    cursor: pointer;
+  }
+}
+
+label {
+  display: block;
+  margin-bottom: 16px;
+  font-weight: 600;
+  color: #5c4331;
+}
+
+.support-user-info {
+  display: inline-block;
+  margin-bottom: 50px;
+
+  > input {
+    font-size: 16px;
+
+    margin-right: 20px;
+    padding: 15px 15px;
+    width: 339px;
+    color: #333;
+    background-color: #fff;
+
+    border: 1px solid #a77f60;
+    border-radius: 8px;
+  }
+
+  input:focus {
+    outline: none;
+    border: 2px solid #8a5f41;
+  }
+
+  > input::placeholder {
+    font-size: 16px;
+  }
+}
+
+#support-message {
+  margin-bottom: 30px;
+
+  > textarea {
+    width: 734px;
+    height: 90px;
+    resize: none;
+
+    border: 1px solid #a77f60;
+    border-radius: 8px;
+
+    padding: 15px 15px;
+    color: #333;
+
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+
+  > textarea:focus {
+    outline: none;
+    border: 2px solid #8a5f41;
+  }
+}
+
+input[type="submit"] {
+  width: 764px;
+  padding: 15px 30px;
+  margin-bottom: 30px;
+
+  border: none;
+  border-radius: 8px;
+
+  color: #5c4331;
+  background-color: #ccd67f;
+
+  font-weight: 600;
+  font-size: 16px;
+
+  box-shadow: 0px 10px 30px 0px rgba(138, 95, 65, 0.2);
 }

@@ -52,5 +52,71 @@
         </div>
       </div>
     </div>
+    <div id="support-container">
+      <div id="support-content">
+        <img src="/media/about_us/support.png" alt="support" />
+        <h2>유기견들의 따뜻한 쉼터 만들기</h2>
+        <p>
+          귀하의 소중한 후원금은 구조 치료비, 영양 사료 구매, 안락사 없는 사설
+          보호소 운영비로 100% 투명하게 집행됩니다.
+        </p>
+      </div>
+      <form method="method" action="" id="support-donation">
+        <p>후원 금액 선택</p>
+        <div id="support-ammount">
+          <input
+            type="radio"
+            id="donation1"
+            name="donation"
+            class="hidden-checkbox"
+          />
+          <label for="donation1"> 10,000원 </label>
+          <input
+            type="radio"
+            id="donation2"
+            name="donation"
+            class="hidden-checkbox"
+          />
+          <label for="donation2"> 30,000원 </label>
+          <input
+            type="radio"
+            id="donation3"
+            name="donation"
+            class="hidden-checkbox"
+          />
+          <label for="donation3"> 50,000원 </label>
+
+          <input
+            type="radio"
+            id="donation4"
+            name="donation"
+            class="hidden-checkbox"
+          />
+          <label for="donation4">
+            <input type="text" placeholder="직접 입력" />
+          </label>
+        </div>
+        <div class="support-user-info">
+          <label for="name">후원인 성함</label>
+          <input type="text" id="name" placeholder="이름을 입력해주세요." />
+        </div>
+        <div class="support-user-info">
+          <label for="phone-number">연락처</label>
+          <input
+            type="text"
+            id="phone-number"
+            placeholder="숫자만 입력해주세요."
+          />
+        </div>
+        <div id="support-message">
+          <label for="message">천사들에게 한마디 (응원 메세지)</label>
+          <textarea
+            id="message"
+            placeholder="예: 상처받은 아이들이 하루빨리 따뜻한 봄날을 가득 품길 응원합니다."
+          ></textarea>
+        </div>
+        <input type="submit" value="따뜻한 마음 전달하기" />
+      </form>
+    </div>
   </body>
 </html>
