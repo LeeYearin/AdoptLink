@@ -1,0 +1,34 @@
+#bar {
+  > a:last-child {
+    background-color: #fff;
+    box-shadow: 0px 10px 10px 0px rgba(138, 95, 65, 0.4);
+  }
+}
+
+form {
+  width: 100%;
+}
+
+.abreast-box {
+  display: inline-block;
+  width: 218px;
+
+  > p {
+    margin-bottom: 5px;
+    color: #8a5f41;
+    font-weight: 500;
+    font-size: 14px;
+  }
+}
+
+.abreast-box:nth-child(odd) {
+  margin-right: 10px;
+}
+
+.input-box {
+  margin-bottom: 15px;
+
+  > input {
+    height: 40px;
+  }
+}
