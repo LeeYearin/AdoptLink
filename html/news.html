@@ -1,372 +1,653 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>동행의 기록</title>
-    <link rel="stylesheet" href="../css/news.css">
-    <link rel="stylesheet" href="../css/scroll.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/news.css" />
+    <link rel="stylesheet" href="../css/scroll.css" />
+  </head>
+  <body>
     <div class="container">
-        <header class="header">
-            <h1>사랑이 필요한 생명들을 위해,<br><span class="highlight">어두운 현실에 빛을 밝히는 </span> 동행의 기록</h1>
-            <p class="subtitle">
-                우리의 이기심과 외면 속에서 지쳐간 아이들의 생생한 구조 실태부터,<br>
-                새로운 삶을 품에 안은 가족들의 따스한 희망 뉴스를 AI 핵심 분석과 함께 한눈에 스크랩해 드립니다.
-            </p>
-        </header>
+      <header class="header">
+        <h1>
+          사랑이 필요한 생명들을 위해,<br /><span class="highlight"
+            >어두운 현실에 빛을 밝히는
+          </span>
+          동행의 기록
+        </h1>
+        <p class="subtitle">
+          우리의 이기심과 외면 속에서 지쳐간 아이들의 생생한 구조 실태부터,<br />
+          새로운 삶을 품에 안은 가족들의 따스한 희망 뉴스를 AI 핵심 분석과 함께
+          한눈에 스크랩해 드립니다.
+        </p>
+      </header>
 
-        <section class="stats-container">
-            <div class="stat-card">
-                <p class="card-title">하루 평균 버려지는 생명</p>
-                <p class="card-value">약 <span style="color: #EF4444;">75</span>마리</p>
-                <p class="card-footer">공공 보호소 기준</p>
-            </div>
-            <div class="stat-card">
-                <p class="card-title">연간 추산 유기 규모</p>
-                <p class="card-value">최대 <span style="color: #A77F60;">30만</span> 마리</p>
-                <p class="card-footer">공공 보호소 기준</p>
-            </div>
-            <div class="stat-card">
-                <p class="card-title">구조 비용 및 보호 예산</p>
-                <p class="card-value">연간 <span style="color: #A77F60;">300억</span> 원</p>
-                <p class="card-footer">안타까운 소모성 예산</p>
-            </div>
-            <div class="stat-card">
-                <p class="card-title">국내 반려 가구 수</p>
-                <p class="card-value">약 <span style="color: #CCD67F;">1,500만</span> 명</p>
-                <p class="card-footer">성숙한 반려 의식 필요</p>
-            </div>
-        </section>
-
-        <div class="info-banner">
-            <span class="info-icon">i</span>
-            <p><strong>기사 연계 안내:</strong> 아래 기사들은 다양한 매체의 유기견 특집 르포 기사를 바탕으로 가공된 정보와 유기견 인식 개선의 주요 아젠다들을 구성한 뉴스 아카이브입니다.
-            <br>우측 하단의 '원본 기사 읽기'를 클릭하시면 원본 기사나 관련 다큐멘터리로 즉각 연결됩니다.</p>
+      <section class="stats-container">
+        <div class="stat-card">
+          <p class="card-title">하루 평균 버려지는 생명</p>
+          <p class="card-value">
+            약 <span style="color: #ef4444">75</span>마리
+          </p>
+          <p class="card-footer">공공 보호소 기준</p>
         </div>
+        <div class="stat-card">
+          <p class="card-title">연간 추산 유기 규모</p>
+          <p class="card-value">
+            최대 <span style="color: #a77f60">30만</span> 마리
+          </p>
+          <p class="card-footer">공공 보호소 기준</p>
+        </div>
+        <div class="stat-card">
+          <p class="card-title">구조 비용 및 보호 예산</p>
+          <p class="card-value">
+            연간 <span style="color: #a77f60">300억</span> 원
+          </p>
+          <p class="card-footer">안타까운 소모성 예산</p>
+        </div>
+        <div class="stat-card">
+          <p class="card-title">국내 반려 가구 수</p>
+          <p class="card-value">
+            약 <span style="color: #ccd67f">1,500만</span> 명
+          </p>
+          <p class="card-footer">성숙한 반려 의식 필요</p>
+        </div>
+      </section>
 
-        <article class="news-card" id="dog_info">
-            <div class="news-image-box">
-                <img src="../media/news/news01.avif" alt="유기견 이미지" class="news-image">
-            </div>
-            <div class="news-content">
-                <div class="news-header">
-                    <span class="author-date">정시형 기자 | 입력: 2025.03.08</span>
-                    <a href="https://www.chosun.com/national/weekend/2025/03/08/MSWEMMZ5FBHDZOMURYQRYTYLGA/" class="btn-link">원본 기사 읽기 &gt;</a>
-                </div>
-                <h2 class="news-title">안 귀여워서, 짖어서, 사료값 올라서... 한 달 새 2200마리 버려졌다</h2>
-                <p class="news-desc">'안 귀여워졌다'는 이유, '사료값이 올랐다'는 핑계가 생명을 버리는 면죄부가 되는 순간, 반려라는 취미가 아니라 관계와 책임의 약속이라는 사실을 다시 묻게 됩니다.</p>
-                
-                <div class="ai-box">
-                    <span class="ai-badge">AI 핵심 추출 문장</span>
-                    <p class="ai-text">"반려동물 등록 수가 350만 마리를 넘은 반면, 한 달 새 2200마리, 해마다 11만 마리 이상이 귀찮음과 비용 부담을 이유로 거리와 보호소에 버려지고 있습니다."</p>
-                </div>
-            </div>
-        </article>
+      <div class="info-banner">
+        <span class="info-icon">i</span>
+        <p>
+          <strong>기사 연계 안내:</strong> 아래 기사들은 다양한 매체의 유기견
+          특집 르포 기사를 바탕으로 가공된 정보와 유기견 인식 개선의 주요
+          아젠다들을 구성한 뉴스 아카이브입니다. <br />우측 하단의 '원본 기사
+          읽기'를 클릭하시면 원본 기사나 관련 다큐멘터리로 즉각 연결됩니다.
+        </p>
+      </div>
 
-        <article class="news-card">
-            <div class="news-image-box">
-                <img src="../media/news/news02.jpg" alt="전국 유기동물 현황 차트" class="news-image">
-            </div>
-            <div class="news-content">
-                <div class="news-header">
-                    <span class="author-date">포인핸드 | 입력: 2025.08.30</span>
-                    <a href="https://www.ohmynews.com/NWS_Web/View/img_pg.aspx?CNTN_CD=IE003516176" class="btn-link">원본 기사 읽기 &gt;</a>
-                </div>
-                <h2 class="news-title">전국 모든 지역 유기동물 현황(2024.6~2025.8)</h2>
-                <p class="news-desc">지도를 가득 채운 점 하나하나가 유기동물 1마리의 위치를 뜻할 때, 문제는 '어디에서'가 아니라 '왜 이렇게 많은가'에 대한 사회 전체의 질문으로 확장됩니다.</p>
-                
-                <div class="ai-box">
-                    <span class="ai-badge">AI 핵심 추출 문장</span>
-                    <p class="ai-text">"2024년 6월부터 2025년 8월까지 약 1년 3개월 동안 전국에서 125,752마리의 동물이 유기됐고, 정부 계획에 따르면 매년 약 11만 마리가 같은 운명을 겪고 있습니다."</p>
-                </div>
-            </div>
-        </article>
+      <article class="news-card" id="dog_info">
+        <div class="news-image-box">
+          <img
+            src="../media/news/news01.avif"
+            alt="유기견 이미지"
+            class="news-image"
+          />
+        </div>
+        <div class="news-content">
+          <div class="news-header">
+            <span class="author-date">정시형 기자 | 입력: 2025.03.08</span>
+            <a
+              href="https://www.chosun.com/national/weekend/2025/03/08/MSWEMMZ5FBHDZOMURYQRYTYLGA/"
+              class="btn-link"
+              target="_blank"
+              >원본 기사 읽기 &gt;</a
+            >
+          </div>
+          <h2 class="news-title">
+            안 귀여워서, 짖어서, 사료값 올라서... 한 달 새 2200마리 버려졌다
+          </h2>
+          <p class="news-desc">
+            '안 귀여워졌다'는 이유, '사료값이 올랐다'는 핑계가 생명을 버리는
+            면죄부가 되는 순간, 반려라는 취미가 아니라 관계와 책임의 약속이라는
+            사실을 다시 묻게 됩니다.
+          </p>
 
-        <article class="news-card">
-            <div class="news-image-box">
-                <img src="../media/news/news03.jpg" alt="철창 안의 유기견" class="news-image">
-            </div>
-            <div class="news-content">
-                <div class="news-header">
-                    <span class="author-date">김세헌 기자 | 입력: 2026.04.05</span>
-                    <a href="https://www.yna.co.kr/view/AKR20260403120600030" class="btn-link">원본 기사 읽기 &gt;</a>
-                </div>
-                <h2 class="news-title">[반려동물] 함께 살 준비 되셨나요?... "유기·사고 줄일 공존방법 찾아야"</h2>
-                <p class="news-desc">입양은 '나도 강아지 키워보고 싶다'는 로망의 출발선이 아니라, 유기와 사고를 줄이기 위한 학습과 공존의 출발점이어야 합니다.</p>
-                
-                <div class="ai-box">
-                    <span class="ai-badge">AI 핵심 추출 문장</span>
-                    <p class="ai-text">"2026년 1분기에만 5만 7천여 마리의 유기 신고가 접수되었고, 전문 교육과 시민학교 등 반려동물 공존 프로그램의 확대가 유기와 사고를 줄이는 핵심 과제로 제시됩니다."</p>
-                </div>
-            </div>
-        </article>
+          <div class="ai-box">
+            <span class="ai-badge">AI 핵심 추출 문장</span>
+            <p class="ai-text">
+              "반려동물 등록 수가 350만 마리를 넘은 반면, 한 달 새 2200마리,
+              해마다 11만 마리 이상이 귀찮음과 비용 부담을 이유로 거리와
+              보호소에 버려지고 있습니다."
+            </p>
+          </div>
+        </div>
+      </article>
 
-        <article class="news-card">
-            <div class="news-image-box">
-                <img src="../media/news/news04.jpg" alt="서울시 반려동물 배움의 날 포스터" class="news-image">
-            </div>
-            <div class="news-content">
-                <div class="news-header">
-                    <span class="author-date">이예솔 기자 | 입력: 2024.05.20</span>
-                    <a href="https://www.newsis.com/view/NISX20240517_0002738949" class="btn-link">원본 기사 읽기 &gt;</a>
-                </div>
-                <h2 class="news-title">"반려동물, 사지 말고 입양하세요" 서울시, 인식개선 캠페인 개최</h2>
-                <p class="news-desc">반려동물 선택의 기본값을 '구매'에서 '입양'으로 바꾸는 일은, 한 생명을 살리는 행동을 넘어 도시 전체의 반려문화 수준을 끌어올리는 정책입니다.</p>
-                
-                <div class="ai-box">
-                    <span class="ai-badge">AI 핵심 추출 문장</span>
-                    <p class="ai-text">"서울시는 보라매공원과 월드컵공원 반려견 놀이터에서 '반려동물 배움의 날-유기동물 인식개선 캠페인'을 열어 시민 교육과 체험 프로그램을 통해 사지 말고 입양하는 문화를 확산하겠다고 밝혔습니다."</p>
-                </div>
-            </div>
-        </article>
+      <article class="news-card">
+        <div class="news-image-box">
+          <img
+            src="../media/news/news02.jpg"
+            alt="전국 유기동물 현황 차트"
+            class="news-image"
+          />
+        </div>
+        <div class="news-content">
+          <div class="news-header">
+            <span class="author-date">포인핸드 | 입력: 2025.08.30</span>
+            <a
+              href="https://www.ohmynews.com/NWS_Web/View/img_pg.aspx?CNTN_CD=IE003516176"
+              class="btn-link"
+              target="_blank"
+              >원본 기사 읽기 &gt;</a
+            >
+          </div>
+          <h2 class="news-title">
+            전국 모든 지역 유기동물 현황(2024.6~2025.8)
+          </h2>
+          <p class="news-desc">
+            지도를 가득 채운 점 하나하나가 유기동물 1마리의 위치를 뜻할 때,
+            문제는 '어디에서'가 아니라 '왜 이렇게 많은가'에 대한 사회 전체의
+            질문으로 확장됩니다.
+          </p>
 
-        <article class="news-card">
-            <div class="news-image-box">
-                <img src="../media/news/news05.jfif" alt="유기견 인식 개선 일러스트" class="news-image">
-            </div>
-            <div class="news-content">
-                <div class="news-header">
-                    <span class="author-date">넥슨핸즈 | 입력: 2020.5.18</span>
-                    <a href="https://nexonhands.tistory.com/1181" class="btn-link">원본 기사 읽기 &gt;</a>
-                </div>
-                <h2 class="news-title">유기견 문제, 인식부터 바꿔야 할 때입니다!</h2>
-                <p class="news-desc">'유기견은 문제 있는 개'라는 낙인을 걷어내는 순간, 포인핸드 같은 플랫폼과 시민 캠페인은 버려진 개들을 다시 가족으로 잇는 연결의 인프라가 됩니다.</p>
-                
-                <div class="ai-box">
-                    <span class="ai-badge">AI 핵심 추출 문장</span>
-                    <p class="ai-text">"기업 사회공헌과 포인핸드 앱, 'FOREVER, TOGETHER' 같은 프로젝트가 결합해 유기견에 대한 부정적 편견을 줄이고, 구조·입양 정보를 투명하게 공유하는 노력이 지속되고 있습니다."</p>
-                </div>
-            </div>
-        </article>
+          <div class="ai-box">
+            <span class="ai-badge">AI 핵심 추출 문장</span>
+            <p class="ai-text">
+              "2024년 6월부터 2025년 8월까지 약 1년 3개월 동안 전국에서
+              125,752마리의 동물이 유기됐고, 정부 계획에 따르면 매년 약 11만
+              마리가 같은 운명을 겪고 있습니다."
+            </p>
+          </div>
+        </div>
+      </article>
 
-        <article class="news-card">
-            <div class="news-image-box">
-                <img src="../media/news/news06.webp" alt="시골 마당에 묶인 진돗개" class="news-image">
-            </div>
-            <div class="news-content">
-                <div class="news-header">
-                    <span class="author-date">조송진 기자 | 입력: 2025-05-24</span>
-                    <a href="https://news.nate.com/view/20250524n04428" class="btn-link">원본 기사 읽기 &gt;</a>
-                </div>
-                <h2 class="news-title">[대선 밖 유기견]②출생·방치·죽음의 고리..."헌법에 '동물보호' 명시해야"</h2>
-                <p class="news-desc">태어남에서 방치와 죽음으로 이어지는 유기견의 생애를 끊어내기 위해서는, 개인의 선의를 넘어 헌법과 법제도 안에 동물보호 원칙을 새기는 사회적 결단이 필요합니다.</p>
-                
-                <div class="ai-box">
-                    <span class="ai-badge">AI 핵심 추출 문장</span>
-                    <p class="ai-text">"마당개와 농장개가 반복적으로 번식·방치·유기로 내몰리는 구조 속에서, 전문가들은 '보호소인 척' 분양을 규제하고 중성화·입양 자격 심사, 헌법 차원의 동물보호 규정을 도입해야 한다고 강조합니다."</p>
-                </div>
-            </div>
-        </article>
+      <article class="news-card">
+        <div class="news-image-box">
+          <img
+            src="../media/news/news03.jpg"
+            alt="철창 안의 유기견"
+            class="news-image"
+          />
+        </div>
+        <div class="news-content">
+          <div class="news-header">
+            <span class="author-date">김세헌 기자 | 입력: 2026.04.05</span>
+            <a
+              href="https://www.yna.co.kr/view/AKR20260403120600030"
+              class="btn-link"
+              target="_blank"
+              >원본 기사 읽기 &gt;</a
+            >
+          </div>
+          <h2 class="news-title">
+            [반려동물] 함께 살 준비 되셨나요?... "유기·사고 줄일 공존방법
+            찾아야"
+          </h2>
+          <p class="news-desc">
+            입양은 '나도 강아지 키워보고 싶다'는 로망의 출발선이 아니라, 유기와
+            사고를 줄이기 위한 학습과 공존의 출발점이어야 합니다.
+          </p>
 
-        <article class="news-card">
-            <div class="news-image-box">
-                <img src="../media/news/news07.avif" alt="유기동물 추이 꺾은선 그래프" class="news-image">
-            </div>
-            <div class="news-content">
-                <div class="news-header">
-                    <span class="author-date">Hello tv NEWS | 입력: 2021.4.28</span>
-                    <a href="https://www.youtube.com/watch?v=2KgFMc_MjTA" class="btn-link">원본 기사 읽기 &gt;</a>
-                </div>
-                <h2 class="news-title">늘어나는 유기동물... '인식 개선'이 우선</h2>
-                <p class="news-desc">유기동물 숫자를 줄이는 해답은 더 많은 우리와 더 큰 보호소가 아니라, 처음부터 버리지 않겠다는 시민 인식과 교육의 변화에 있습니다.</p>
-                
-                <div class="ai-box">
-                    <span class="ai-badge">AI 핵심 추출 문장</span>
-                    <p class="ai-text">"최근 몇 년 사이 유기동물 수는 여전히 하루 300마리 안팎을 기록하고 있으며, 구조된 동물의 약 40%만 입양되는 현실 속에서 전문가들은 강력한 처벌보다 인식 개선과 예방 교육을 먼저 강조합니다."</p>
-                </div>
-            </div>
-        </article>
-    
+          <div class="ai-box">
+            <span class="ai-badge">AI 핵심 추출 문장</span>
+            <p class="ai-text">
+              "2026년 1분기에만 5만 7천여 마리의 유기 신고가 접수되었고, 전문
+              교육과 시민학교 등 반려동물 공존 프로그램의 확대가 유기와 사고를
+              줄이는 핵심 과제로 제시됩니다."
+            </p>
+          </div>
+        </div>
+      </article>
 
-<article class="news-card">
-            <div class="news-image-box">
-                <img src="../media/news/news01.avif" alt="노령 유기견 이미지" class="news-image">
-            </div>
-            <div class="news-content">
-                <div class="news-header">
-                    <span class="author-date">동행플러스 기자 | 입력: 2026.05.25</span>
-                    <a href="#" class="btn-link">원본 기사 읽기 &gt;</a>
-                </div>
-                <h2 class="news-title">노령 유기견 입양</h2>
-                <p class="news-desc">장난기 넘치는 퍼피(Puppy)의 시절은 짧지만, 사람의 감정을 온전히 읽어내고 묵묵히 곁을 지켜주는 노령견의 시간은 깊고 아름답습니다. 견생의 황혼기를 함께하며 진정한 반려의 의미를 깨닫게 하는 '시니어 유기견'의 품격을 전합니다.</p>
-                
-                <div class="ai-box">
-                    <span class="ai-badge">AI 핵심 추출 문장</span>
-                    <p class="ai-text">"어린 강생이의 배변 훈련이나 이갈이 과정을 감당하기 어려운 가구에게, 이미 성격이 형성되고 사회화 과정을 거친 노령 유기견은 오히려 안정적이고 성숙한 최고의 동반자가 될 수 있습니다."</p>
-                </div>
-            </div>
-        </article>
+      <article class="news-card">
+        <div class="news-image-box">
+          <img
+            src="../media/news/news04.jpg"
+            alt="서울시 반려동물 배움의 날 포스터"
+            class="news-image"
+          />
+        </div>
+        <div class="news-content">
+          <div class="news-header">
+            <span class="author-date">이예솔 기자 | 입력: 2024.05.20</span>
+            <a
+              href="https://www.newsis.com/view/NISX20240517_0002738949"
+              class="btn-link"
+              target="_blank"
+              >원본 기사 읽기 &gt;</a
+            >
+          </div>
+          <h2 class="news-title">
+            "반려동물, 사지 말고 입양하세요" 서울시, 인식개선 캠페인 개최
+          </h2>
+          <p class="news-desc">
+            반려동물 선택의 기본값을 '구매'에서 '입양'으로 바꾸는 일은, 한
+            생명을 살리는 행동을 넘어 도시 전체의 반려문화 수준을 끌어올리는
+            정책입니다.
+          </p>
 
-        <article class="news-card">
-            <div class="news-image-box">
-                <img src="../media/news/news01.avif" alt="보호소 봉사활동 이미지" class="news-image">
-            </div>
-            <div class="news-content">
-                <div class="news-header">
-                    <span class="author-date">동행플러스 기자 | 입력: 2026.05.25</span>
-                    <a href="#" class="btn-link">원본 기사 읽기 &gt;</a>
-                </div>
-                <h2 class="news-title">유기견 보호소 봉사활동과 시민 참여</h2>
-                <p class="news-desc">보호소의 철창을 사이에 두고 마주하는 눈빛은 동정의 대상이 아닌, 우리가 회복해야 할 책임의 거울입니다. 슬픔을 지우고 내일의 희망을 채우는 보호소 봉사활동을 통해, 유기 동물 문제를 사회적 연대로 해결하는 '참여형 구조'를 제안합니다.</p>
-                
-                <div class="ai-box">
-                    <span class="ai-badge">AI 핵심 추출 문장</span>
-                    <p class="ai-text">"유기견 보호소는 단순히 버려진 동물을 격리하는 곳이 아니라, 시민들의 따뜻한 관심과 봉사를 통해 생명이 다시 사회로 복귀할 수 있도록 돕는 디딤돌이자 치유의 공간이어야 합니다."</p>
-                </div>
-            </div>
-        </article>
+          <div class="ai-box">
+            <span class="ai-badge">AI 핵심 추출 문장</span>
+            <p class="ai-text">
+              "서울시는 보라매공원과 월드컵공원 반려견 놀이터에서 '반려동물
+              배움의 날-유기동물 인식개선 캠페인'을 열어 시민 교육과 체험
+              프로그램을 통해 사지 말고 입양하는 문화를 확산하겠다고
+              밝혔습니다."
+            </p>
+          </div>
+        </div>
+      </article>
 
-        <article class="news-card">
-            <div class="news-image-box">
-                <img src="../media/news/news01.avif" alt="해외 입양 이미지" class="news-image">
-            </div>
-            <div class="news-content">
-                <div class="news-header">
-                    <span class="author-date">동행플러스 기자 | 입력: 2026.05.25</span>
-                    <a href="#" class="btn-link">원본 기사 읽기 &gt;</a>
-                </div>
-                <h2 class="news-title">유기견 해외 입양과 글로벌 연대</h2>
-                <p class="news-desc">국경과 언어의 장벽을 넘어 생명을 구하는 일에는 한계가 없습니다. 국내에서 소외받던 대형 믹스견들이 해외에서 당당한 가족 구성원으로 환대받는 기적을 통해, 생명 존중의 가치를 전 세계로 확장하는 '글로벌 레스큐(Global Rescue)'를 조명합니다.</p>
-                
-                <div class="ai-box">
-                    <span class="ai-badge">AI 핵심 추출 문장</span>
-                    <p class="ai-text">"국내의 좁은 아파트 환경과 편견으로 입양이 좌절되던 진도 믹스견들이 넓은 마당과 대형견 문화가 정착된 해외에서 제2의 삶을 찾고 있으며, 이는 우리 사회의 입양 기준을 되돌아보게 합니다."</p>
-                </div>
-            </div>
-        </article>
+      <article class="news-card">
+        <div class="news-image-box">
+          <img
+            src="../media/news/news05.jfif"
+            alt="유기견 인식 개선 일러스트"
+            class="news-image"
+          />
+        </div>
+        <div class="news-content">
+          <div class="news-header">
+            <span class="author-date">넥슨핸즈 | 입력: 2020.5.18</span>
+            <a
+              href="https://nexonhands.tistory.com/1181"
+              class="btn-link"
+              target="_blank"
+              >원본 기사 읽기 &gt;</a
+            >
+          </div>
+          <h2 class="news-title">유기견 문제, 인식부터 바꿔야 할 때입니다!</h2>
+          <p class="news-desc">
+            '유기견은 문제 있는 개'라는 낙인을 걷어내는 순간, 포인핸드 같은
+            플랫폼과 시민 캠페인은 버려진 개들을 다시 가족으로 잇는 연결의
+            인프라가 됩니다.
+          </p>
 
-        <article class="news-card">
-            <div class="news-image-box">
-                <img src="../media/news/news01.avif" alt="행동 교정 이미지" class="news-image">
-            </div>
-            <div class="news-content">
-                <div class="news-header">
-                    <span class="author-date">동행플러스 기자 | 입력: 2026.05.25</span>
-                    <a href="#" class="btn-link">원본 기사 읽기 &gt;</a>
-                </div>
-                <h2 class="news-title">유기견 행동 교정과 사회화 교육</h2>
-                <p class="news-desc">'문제견'이라는 낙인은 인간의 방임과 오해에서 비롯된 허상일 뿐입니다. 상처 입은 마음에 올바른 교육과 신뢰라는 처방을 더해, 세상 가장 다정한 반려견으로 거듭나는 유기견들의 놀라운 변화와 '행동 교정'의 기적을 소개합니다.</p>
-                
-                <div class="ai-box">
-                    <span class="ai-badge">AI 핵심 추출 문장</span>
-                    <p class="ai-text">"보호소 유기견들이 보이는 불안 증세는 적절한 사회화 교육과 긍정 강화 훈련을 통해 충분히 극복 가능하며, 이들에게 필요한 것은 처벌이 아닌 안전한 환경과 기다림입니다."</p>
-                </div>
-            </div>
-        </article>
+          <div class="ai-box">
+            <span class="ai-badge">AI 핵심 추출 문장</span>
+            <p class="ai-text">
+              "기업 사회공헌과 포인핸드 앱, 'FOREVER, TOGETHER' 같은 프로젝트가
+              결합해 유기견에 대한 부정적 편견을 줄이고, 구조·입양 정보를
+              투명하게 공유하는 노력이 지속되고 있습니다."
+            </p>
+          </div>
+        </div>
+      </article>
 
-        <article class="news-card">
-            <div class="news-image-box">
-                <img src="../media/news/news01.avif" alt="임시보호 이미지" class="news-image">
-            </div>
-            <div class="news-content">
-                <div class="news-header">
-                    <span class="author-date">동행플러스 기자 | 입력: 2026.05.25</span>
-                    <a href="#" class="btn-link">원본 기사 읽기 &gt;</a>
-                </div>
-                <h2 class="news-title">도심 속 임시보호(임보) 문화 확산</h2>
-                <p class="news-desc">입양이 평생을 책임지는 무거운 약속이라면, 임시보호는 유기견에게 세상의 온기를 미리 맛보여주는 달콤한 마중물입니다. 가정이라는 울타리 안에서 사회성을 배우고 진짜 가족을 만날 확률을 높이는 '단기 임시보호'의 선한 영향력을 전합니다.</p>
-                
-                <div class="ai-box">
-                    <span class="ai-badge">AI 핵심 추출 문장</span>
-                    <p class="ai-text">"임시보호는 보호소라는 열악한 환경에서 유기견이 겪는 극심한 스트레스를 줄여줄 뿐 아니라, 실제 가정환경에서의 적응력을 검증해 평생 입양으로 이어지는 성공률을 획기적으로 높입니다."</p>
-                </div>
-            </div>
-        </article>
+      <article class="news-card">
+        <div class="news-image-box">
+          <img
+            src="../media/news/news06.webp"
+            alt="시골 마당에 묶인 진돗개"
+            class="news-image"
+          />
+        </div>
+        <div class="news-content">
+          <div class="news-header">
+            <span class="author-date">조송진 기자 | 입력: 2025-05-24</span>
+            <a
+              href="https://news.nate.com/view/20250524n04428"
+              class="btn-link"
+              target="_blank"
+              >원본 기사 읽기 &gt;</a
+            >
+          </div>
+          <h2 class="news-title">
+            [대선 밖 유기견]②출생·방치·죽음의 고리..."헌법에 '동물보호'
+            명시해야"
+          </h2>
+          <p class="news-desc">
+            태어남에서 방치와 죽음으로 이어지는 유기견의 생애를 끊어내기
+            위해서는, 개인의 선의를 넘어 헌법과 법제도 안에 동물보호 원칙을
+            새기는 사회적 결단이 필요합니다.
+          </p>
 
-        <article class="news-card">
-            <div class="news-image-box">
-                <img src="../media/news/news01.avif" alt="동물등록제 이미지" class="news-image">
-            </div>
-            <div class="news-content">
-                <div class="news-header">
-                    <span class="author-date">동행플러스 기자 | 입력: 2026.05.25</span>
-                    <a href="#" class="btn-link">원본 기사 읽기 &gt;</a>
-                </div>
-                <h2 class="news-title">동물등록제와 유기 방지 시스템</h2>
-                <p class="news-desc">동물등록은 단순한 행정 절차가 아니라, '우리는 끝까지 함께한다'는 가족으로서의 첫 번째 서약입니다. 기술과 제도를 통해 유기를 원천 차단하고, 책임감 있는 반려 문화를 정착시키기 위한 '스마트 동물 복지'의 미래를 짚어봅니다.</p>
-                
-                <div class="ai-box">
-                    <span class="ai-badge">AI 핵심 추출 문장</span>
-                    <p class="ai-text">"반려동물을 가족으로 맞이하는 순간 내장형 칩 등록을 의무화하는 것은, 순간의 유실이 영원한 유기로 이어지는 비극을 막을 수 있는 가장 강력하고 실효성 있는 법적 안전장치입니다."</p>
-                </div>
-            </div>
-        </article>
+          <div class="ai-box">
+            <span class="ai-badge">AI 핵심 추출 문장</span>
+            <p class="ai-text">
+              "마당개와 농장개가 반복적으로 번식·방치·유기로 내몰리는 구조
+              속에서, 전문가들은 '보호소인 척' 분양을 규제하고 중성화·입양 자격
+              심사, 헌법 차원의 동물보호 규정을 도입해야 한다고 강조합니다."
+            </p>
+          </div>
+        </div>
+      </article>
 
-        <article class="news-card">
-            <div class="news-image-box">
-                <img src="../media/news/news01.avif" alt="대형 유기견 이미지" class="news-image">
-            </div>
-            <div class="news-content">
-                <div class="news-header">
-                    <span class="author-date">동행플러스 기자 | 입력: 2026.05.25</span>
-                    <a href="#" class="btn-link">원본 기사 읽기 &gt;</a>
-                </div>
-                <h2 class="news-title">대형 유기견에 대한 편견 해소</h2>
-                <p class="news-desc">덩치가 크다는 이유로 맹견이라는 오해를 받거나 입양 순위에서 밀려나는 대형 유기견들, 하지만 그 큰 몸집 안에는 누구보다 깊은 순둥이의 마음이 숨어있습니다. 편견의 크기를 줄이면 사랑의 크기가 커지는 '빅 도그(Big Dog)'들의 반전 매력을 소개합니다.</p>
-                
-                <div class="ai-box">
-                    <span class="ai-badge">AI 핵심 추출 문장</span>
-                    <p class="ai-text">"대형견에 대한 무조건적인 두려움에서 벗어나 개체별 성향을 정확히 파악해야 하며, 활동량을 충족해 줄 수 있는 환경만 제공된다면 대형 믹스견만큼 든든하고 온순한 반려견도 없습니다."</p>
-                </div>
-            </div>
-        </article>
+      <article class="news-card">
+        <div class="news-image-box">
+          <img
+            src="../media/news/news07.avif"
+            alt="유기동물 추이 꺾은선 그래프"
+            class="news-image"
+          />
+        </div>
+        <div class="news-content">
+          <div class="news-header">
+            <span class="author-date">Hello tv NEWS | 입력: 2021.4.28</span>
+            <a
+              href="https://www.youtube.com/watch?v=2KgFMc_MjTA"
+              class="btn-link"
+              target="_blank"
+              >원본 기사 읽기 &gt;</a
+            >
+          </div>
+          <h2 class="news-title">늘어나는 유기동물... '인식 개선'이 우선</h2>
+          <p class="news-desc">
+            유기동물 숫자를 줄이는 해답은 더 많은 우리와 더 큰 보호소가 아니라,
+            처음부터 버리지 않겠다는 시민 인식과 교육의 변화에 있습니다.
+          </p>
 
-        <article class="news-card">
-            <div class="news-image-box">
-                <img src="../media/news/news01.avif" alt="테라피독 이미지" class="news-image">
-            </div>
-            <div class="news-content">
-                <div class="news-header">
-                    <span class="author-date">동행플러스 기자 | 입력: 2026.05.25</span>
-                    <a href="#" class="btn-link">원본 기사 읽기 &gt;</a>
-                </div>
-                <h2 class="news-title">유기견 출신 테라피독(치유견) 활약</h2>
-                <p class="news-desc">인간에게 버림받았던 유기견들이 이제는 상처받은 인간의 마음을 치유하는 위로의 천사로 돌아왔습니다. 고통을 경험했기에 타인의 아픔을 더 깊이 어루만지는 유기견 출신 '테라피독'들의 감동적인 활약과 사회적 기여를 주목합니다.</p>
-                
-                <div class="ai-box">
-                    <span class="ai-badge">AI 핵심 추출 문장</span>
-                    <p class="ai-text">"구조된 유기견 중 뛰어난 친화력과 공감 능력을 가진 개체들을 전문 테라피독으로 양성함으로써, 유기 동물에 대한 부정적 인식을 개선하고 사회적 취약 계층을 치유하는 상생의 모델을 구축해야 합니다."</p>
-                </div>
-            </div>
-        </article>
+          <div class="ai-box">
+            <span class="ai-badge">AI 핵심 추출 문장</span>
+            <p class="ai-text">
+              "최근 몇 년 사이 유기동물 수는 여전히 하루 300마리 안팎을 기록하고
+              있으며, 구조된 동물의 약 40%만 입양되는 현실 속에서 전문가들은
+              강력한 처벌보다 인식 개선과 예방 교육을 먼저 강조합니다."
+            </p>
+          </div>
+        </div>
+      </article>
 
-        <article class="news-card">
-            <div class="news-image-box">
-                <img src="../media/news/news01.avif" alt="입양 문화 캠페인 이미지" class="news-image">
-            </div>
-            <div class="news-content">
-                <div class="news-header">
-                    <span class="author-date">동행플러스 기자 | 입력: 2026.05.25</span>
-                    <a href="#" class="btn-link">원본 기사 읽기 &gt;</a>
-                </div>
-                <h2 class="news-title">사지 말고 입양하는 문화 (Don't Buy, Adopt)</h2>
-                <p class="news-desc">생명은 돈을 주고 구매하는 상품이 아니라, 가슴으로 맞이하는 가족입니다. 펫숍의 유리창 너머 소비되는 생명의 악순환을 끊고, 보호소의 기다림을 희망으로 바꾸는 '사지 말고 입양하는 문화'의 정착을 위해 목소리를 높입니다.</p>
-                
-                <div class="ai-box">
-                    <span class="ai-badge">AI 핵심 추출 문장</span>
-                    <p class="ai-text">"동물 매매업의 상업적 소비 구조가 존재하는 한 유기 동물 문제는 결코 해결될 수 없으며, 반려 문화를 선진화하기 위해서는 반드시 '보호소 입양'이 최우선 선택지가 되는 인식 전환이 필요합니다."</p>
-                </div>
-            </div>
-        </article>
+      <article class="news-card">
+        <div class="news-image-box">
+          <img
+            src="../media/news/news01.avif"
+            alt="노령 유기견 이미지"
+            class="news-image"
+          />
+        </div>
+        <div class="news-content">
+          <div class="news-header">
+            <span class="author-date">동행플러스 기자 | 입력: 2026.05.25</span>
+            <a href="#" class="btn-link" target="_blank">원본 기사 읽기 &gt;</a>
+          </div>
+          <h2 class="news-title">노령 유기견 입양</h2>
+          <p class="news-desc">
+            장난기 넘치는 퍼피(Puppy)의 시절은 짧지만, 사람의 감정을 온전히
+            읽어내고 묵묵히 곁을 지켜주는 노령견의 시간은 깊고 아름답습니다.
+            견생의 황혼기를 함께하며 진정한 반려의 의미를 깨닫게 하는 '시니어
+            유기견'의 품격을 전합니다.
+          </p>
 
-        <article class="news-card">
-            <div class="news-image-box">
-                <img src="../media/news/news01.avif" alt="동물보호센터 이미지" class="news-image">
-            </div>
-            <div class="news-content">
-                <div class="news-header">
-                    <span class="author-date">동행플러스 기자 | 입력: 2026.05.25</span>
-                    <a href="#" class="btn-link">원본 기사 읽기 &gt;</a>
-                </div>
-                <h2 class="news-title">유기견을 위한 제도적 쉼터, 지자체 동물보호센터의 변화</h2>
-                <p class="news-desc">유기견 보호소는 안락사를 기다리는 어두운 수용소가 아니라, 새로운 삶을 준비하는 활기찬 학교여야 합니다. 쾌적한 환경과 전문적인 관리 시스템을 도입해 지역 사회와 상생하는 '현대식 동물복지센터'의 패러다임을 제안합니다.</p>
-                
-                <div class="ai-box">
-                    <span class="ai-badge">AI 핵심 추출 문장</span>
-                    <p class="ai-text">"지자체 동물보호센터가 혐오 시설이라는 오명을 벗고 시민들이 언제든 방문해 유기견과 교감할 수 있는 열린 문화 공간으로 전환될 때, 입양률 제고와 동물권 향상을 동시에 이룰 수 있습니다."</p>
-                </div>
-            </div>
-        </article>
+          <div class="ai-box">
+            <span class="ai-badge">AI 핵심 추출 문장</span>
+            <p class="ai-text">
+              "어린 강생이의 배변 훈련이나 이갈이 과정을 감당하기 어려운
+              가구에게, 이미 성격이 형성되고 사회화 과정을 거친 노령 유기견은
+              오히려 안정적이고 성숙한 최고의 동반자가 될 수 있습니다."
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-image-box">
+          <img
+            src="../media/news/news01.avif"
+            alt="보호소 봉사활동 이미지"
+            class="news-image"
+          />
+        </div>
+        <div class="news-content">
+          <div class="news-header">
+            <span class="author-date">동행플러스 기자 | 입력: 2026.05.25</span>
+            <a href="#" class="btn-link" target="_blank">원본 기사 읽기 &gt;</a>
+          </div>
+          <h2 class="news-title">유기견 보호소 봉사활동과 시민 참여</h2>
+          <p class="news-desc">
+            보호소의 철창을 사이에 두고 마주하는 눈빛은 동정의 대상이 아닌,
+            우리가 회복해야 할 책임의 거울입니다. 슬픔을 지우고 내일의 희망을
+            채우는 보호소 봉사활동을 통해, 유기 동물 문제를 사회적 연대로
+            해결하는 '참여형 구조'를 제안합니다.
+          </p>
+
+          <div class="ai-box">
+            <span class="ai-badge">AI 핵심 추출 문장</span>
+            <p class="ai-text">
+              "유기견 보호소는 단순히 버려진 동물을 격리하는 곳이 아니라,
+              시민들의 따뜻한 관심과 봉사를 통해 생명이 다시 사회로 복귀할 수
+              있도록 돕는 디딤돌이자 치유의 공간이어야 합니다."
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-image-box">
+          <img
+            src="../media/news/news01.avif"
+            alt="해외 입양 이미지"
+            class="news-image"
+          />
+        </div>
+        <div class="news-content">
+          <div class="news-header">
+            <span class="author-date">동행플러스 기자 | 입력: 2026.05.25</span>
+            <a href="#" class="btn-link" target="_blank">원본 기사 읽기 &gt;</a>
+          </div>
+          <h2 class="news-title">유기견 해외 입양과 글로벌 연대</h2>
+          <p class="news-desc">
+            국경과 언어의 장벽을 넘어 생명을 구하는 일에는 한계가 없습니다.
+            국내에서 소외받던 대형 믹스견들이 해외에서 당당한 가족 구성원으로
+            환대받는 기적을 통해, 생명 존중의 가치를 전 세계로 확장하는 '글로벌
+            레스큐(Global Rescue)'를 조명합니다.
+          </p>
+
+          <div class="ai-box">
+            <span class="ai-badge">AI 핵심 추출 문장</span>
+            <p class="ai-text">
+              "국내의 좁은 아파트 환경과 편견으로 입양이 좌절되던 진도
+              믹스견들이 넓은 마당과 대형견 문화가 정착된 해외에서 제2의 삶을
+              찾고 있으며, 이는 우리 사회의 입양 기준을 되돌아보게 합니다."
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-image-box">
+          <img
+            src="../media/news/news01.avif"
+            alt="행동 교정 이미지"
+            class="news-image"
+          />
+        </div>
+        <div class="news-content">
+          <div class="news-header">
+            <span class="author-date">동행플러스 기자 | 입력: 2026.05.25</span>
+            <a href="#" class="btn-link" target="_blank">원본 기사 읽기 &gt;</a>
+          </div>
+          <h2 class="news-title">유기견 행동 교정과 사회화 교육</h2>
+          <p class="news-desc">
+            '문제견'이라는 낙인은 인간의 방임과 오해에서 비롯된 허상일 뿐입니다.
+            상처 입은 마음에 올바른 교육과 신뢰라는 처방을 더해, 세상 가장
+            다정한 반려견으로 거듭나는 유기견들의 놀라운 변화와 '행동 교정'의
+            기적을 소개합니다.
+          </p>
+
+          <div class="ai-box">
+            <span class="ai-badge">AI 핵심 추출 문장</span>
+            <p class="ai-text">
+              "보호소 유기견들이 보이는 불안 증세는 적절한 사회화 교육과 긍정
+              강화 훈련을 통해 충분히 극복 가능하며, 이들에게 필요한 것은 처벌이
+              아닌 안전한 환경과 기다림입니다."
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-image-box">
+          <img
+            src="../media/news/news01.avif"
+            alt="임시보호 이미지"
+            class="news-image"
+          />
+        </div>
+        <div class="news-content">
+          <div class="news-header">
+            <span class="author-date">동행플러스 기자 | 입력: 2026.05.25</span>
+            <a href="#" class="btn-link" target="_blank">원본 기사 읽기 &gt;</a>
+          </div>
+          <h2 class="news-title">도심 속 임시보호(임보) 문화 확산</h2>
+          <p class="news-desc">
+            입양이 평생을 책임지는 무거운 약속이라면, 임시보호는 유기견에게
+            세상의 온기를 미리 맛보여주는 달콤한 마중물입니다. 가정이라는 울타리
+            안에서 사회성을 배우고 진짜 가족을 만날 확률을 높이는 '단기
+            임시보호'의 선한 영향력을 전합니다.
+          </p>
+
+          <div class="ai-box">
+            <span class="ai-badge">AI 핵심 추출 문장</span>
+            <p class="ai-text">
+              "임시보호는 보호소라는 열악한 환경에서 유기견이 겪는 극심한
+              스트레스를 줄여줄 뿐 아니라, 실제 가정환경에서의 적응력을 검증해
+              평생 입양으로 이어지는 성공률을 획기적으로 높입니다."
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-image-box">
+          <img
+            src="../media/news/news01.avif"
+            alt="동물등록제 이미지"
+            class="news-image"
+          />
+        </div>
+        <div class="news-content">
+          <div class="news-header">
+            <span class="author-date">동행플러스 기자 | 입력: 2026.05.25</span>
+            <a href="#" class="btn-link" target="_blank">원본 기사 읽기 &gt;</a>
+          </div>
+          <h2 class="news-title">동물등록제와 유기 방지 시스템</h2>
+          <p class="news-desc">
+            동물등록은 단순한 행정 절차가 아니라, '우리는 끝까지 함께한다'는
+            가족으로서의 첫 번째 서약입니다. 기술과 제도를 통해 유기를 원천
+            차단하고, 책임감 있는 반려 문화를 정착시키기 위한 '스마트 동물
+            복지'의 미래를 짚어봅니다.
+          </p>
+
+          <div class="ai-box">
+            <span class="ai-badge">AI 핵심 추출 문장</span>
+            <p class="ai-text">
+              "반려동물을 가족으로 맞이하는 순간 내장형 칩 등록을 의무화하는
+              것은, 순간의 유실이 영원한 유기로 이어지는 비극을 막을 수 있는
+              가장 강력하고 실효성 있는 법적 안전장치입니다."
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-image-box">
+          <img
+            src="../media/news/news01.avif"
+            alt="대형 유기견 이미지"
+            class="news-image"
+          />
+        </div>
+        <div class="news-content">
+          <div class="news-header">
+            <span class="author-date">동행플러스 기자 | 입력: 2026.05.25</span>
+            <a href="#" class="btn-link" target="_blank">원본 기사 읽기 &gt;</a>
+          </div>
+          <h2 class="news-title">대형 유기견에 대한 편견 해소</h2>
+          <p class="news-desc">
+            덩치가 크다는 이유로 맹견이라는 오해를 받거나 입양 순위에서 밀려나는
+            대형 유기견들, 하지만 그 큰 몸집 안에는 누구보다 깊은 순둥이의
+            마음이 숨어있습니다. 편견의 크기를 줄이면 사랑의 크기가 커지는 '빅
+            도그(Big Dog)'들의 반전 매력을 소개합니다.
+          </p>
+
+          <div class="ai-box">
+            <span class="ai-badge">AI 핵심 추출 문장</span>
+            <p class="ai-text">
+              "대형견에 대한 무조건적인 두려움에서 벗어나 개체별 성향을 정확히
+              파악해야 하며, 활동량을 충족해 줄 수 있는 환경만 제공된다면 대형
+              믹스견만큼 든든하고 온순한 반려견도 없습니다."
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-image-box">
+          <img
+            src="../media/news/news01.avif"
+            alt="테라피독 이미지"
+            class="news-image"
+          />
+        </div>
+        <div class="news-content">
+          <div class="news-header">
+            <span class="author-date">동행플러스 기자 | 입력: 2026.05.25</span>
+            <a href="#" class="btn-link" target="_blank">원본 기사 읽기 &gt;</a>
+          </div>
+          <h2 class="news-title">유기견 출신 테라피독(치유견) 활약</h2>
+          <p class="news-desc">
+            인간에게 버림받았던 유기견들이 이제는 상처받은 인간의 마음을
+            치유하는 위로의 천사로 돌아왔습니다. 고통을 경험했기에 타인의 아픔을
+            더 깊이 어루만지는 유기견 출신 '테라피독'들의 감동적인 활약과 사회적
+            기여를 주목합니다.
+          </p>
+
+          <div class="ai-box">
+            <span class="ai-badge">AI 핵심 추출 문장</span>
+            <p class="ai-text">
+              "구조된 유기견 중 뛰어난 친화력과 공감 능력을 가진 개체들을 전문
+              테라피독으로 양성함으로써, 유기 동물에 대한 부정적 인식을 개선하고
+              사회적 취약 계층을 치유하는 상생의 모델을 구축해야 합니다."
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-image-box">
+          <img
+            src="../media/news/news01.avif"
+            alt="입양 문화 캠페인 이미지"
+            class="news-image"
+          />
+        </div>
+        <div class="news-content">
+          <div class="news-header">
+            <span class="author-date">동행플러스 기자 | 입력: 2026.05.25</span>
+            <a href="#" class="btn-link" target="_blank">원본 기사 읽기 &gt;</a>
+          </div>
+          <h2 class="news-title">사지 말고 입양하는 문화 (Don't Buy, Adopt)</h2>
+          <p class="news-desc">
+            생명은 돈을 주고 구매하는 상품이 아니라, 가슴으로 맞이하는
+            가족입니다. 펫숍의 유리창 너머 소비되는 생명의 악순환을 끊고,
+            보호소의 기다림을 희망으로 바꾸는 '사지 말고 입양하는 문화'의 정착을
+            위해 목소리를 높입니다.
+          </p>
+
+          <div class="ai-box">
+            <span class="ai-badge">AI 핵심 추출 문장</span>
+            <p class="ai-text">
+              "동물 매매업의 상업적 소비 구조가 존재하는 한 유기 동물 문제는
+              결코 해결될 수 없으며, 반려 문화를 선진화하기 위해서는 반드시
+              '보호소 입양'이 최우선 선택지가 되는 인식 전환이 필요합니다."
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-image-box">
+          <img
+            src="../media/news/news01.avif"
+            alt="동물보호센터 이미지"
+            class="news-image"
+          />
+        </div>
+        <div class="news-content">
+          <div class="news-header">
+            <span class="author-date">동행플러스 기자 | 입력: 2026.05.25</span>
+            <a href="#" class="btn-link" target="_blank">원본 기사 읽기 &gt;</a>
+          </div>
+          <h2 class="news-title">
+            유기견을 위한 제도적 쉼터, 지자체 동물보호센터의 변화
+          </h2>
+          <p class="news-desc">
+            유기견 보호소는 안락사를 기다리는 어두운 수용소가 아니라, 새로운
+            삶을 준비하는 활기찬 학교여야 합니다. 쾌적한 환경과 전문적인 관리
+            시스템을 도입해 지역 사회와 상생하는 '현대식 동물복지센터'의
+            패러다임을 제안합니다.
+          </p>
+
+          <div class="ai-box">
+            <span class="ai-badge">AI 핵심 추출 문장</span>
+            <p class="ai-text">
+              "지자체 동물보호센터가 혐오 시설이라는 오명을 벗고 시민들이 언제든
+              방문해 유기견과 교감할 수 있는 열린 문화 공간으로 전환될 때,
+              입양률 제고와 동물권 향상을 동시에 이룰 수 있습니다."
+            </p>
+          </div>
+        </div>
+      </article>
     </div>
+  </body>
+</html>
