@@ -11,7 +11,8 @@
       <div class="thumbnail-box">
         <img src="{{ animal.popfile1 }}" alt="보호동물 사진" />
 
-        <span class="badge gender-female"
+        <span
+          class="badge {{ 'gender-female' if animal.sexCd == 'F' else 'gender-male' }}"
           >♀ {{ '여아' if animal.sexCd == 'F' else '남아' }}</span
         >
 

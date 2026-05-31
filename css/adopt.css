@@ -38,23 +38,6 @@ body {
   color: rgba(255, 255, 255, 0.9);
   font-size: 15px;
   line-height: 1.6;
-  margin-bottom: 30px;
-}
-
-.cta-button {
-  background-color: #ccd67f;
-  color: #5c4331;
-  border: none;
-  padding: 12px 28px;
-  border-radius: 10px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.cta-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(204, 214, 127, 0.6);
-  background-color: #dbe494;
 }
 
 .bottom-section {
