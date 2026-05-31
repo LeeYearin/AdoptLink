@@ -4,7 +4,7 @@ base_url = "http://apis.data.go.kr/1543061/abandonmentPublicService_v2"
 url = base_url + "/abandonmentPublic_v2"
 params = {
     "serviceKey": "16675a982576de9123a769831c2ca6c0b797733762ae5bd47bfed51688a8f5f1",
-    "numOfRows": 40,
+    "numOfRows": 20,
     "state": "notice",
     "upkind": "417000",
     "_type": "json"

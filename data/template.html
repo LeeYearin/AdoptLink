@@ -6,35 +6,36 @@
     <title>Document</title>
   </head>
   <body>
-    <ul>
-      {% for animal in animals %}
-      <li>
-        <img src="{{ animal.popfile1 }}" />
-        <div class="dog-info">
-          <p><span>견종</span><span>{{ animal.kindNm }}</span></p>
-          <p><span>발견장소</span> <span>{{ animal.happenPlace }}</span></p>
-          <p>
-            <span>성별</span
-            ><span> {{ '여' if animal.sexCd == 'F' else '남' }}</span>
-          </p>
-          <p>
-            <span>출생년도</span>
-            <span>{{ animal.age.replace('(년생)', '년생') }}</span>
-          </p>
-          <p><span>특징</span> <span>{{ animal.specialMark }}</span></p>
-          <p>
-            <span>몸무게</span
-            ><span> {{ animal.weight.replace("(Kg)", "kg")}}</span>
-          </p>
-          <p>
-            <span>중성화 여부</span>
-            <span>{{ 'O' if animal.neuterYn == 'Y' else 'X' }}</span>
-          </p>
-          <p><span>보호소</span> <span>{{ animal.careNm }}</span></p>
-          <p><span>연락처</span><span> {{ animal.careTel }}</span></p>
+    {% for animal in animals %}
+    <div class="adopt-card">
+      <div class="thumbnail-box">
+        <img src="{{ animal.popfile1 }}" alt="보호동물 사진" />
+
+        <span
+          class="badge {{ 'gender-female' if animal.sexCd == 'F' else 'gender-male' }}"
+          >♀ {{ '여아' if animal.sexCd == 'F' else '남아' }}</span
+        >
+
+        <span class="badge neuter"
+          >중성화 {{ 'O' if animal.neuterYn == 'Y' else 'X' }}</span
+        >
+      </div>
+
+      <div class="info-content">
+        <div class="info-header">
+          <span class="breed">{{ animal.kindNm }}</span>
+          <span class="weight">{{ animal.weight.replace("(Kg)", "kg")}}</span>
         </div>
-      </li>
-      {% endfor %}
-    </ul>
+
+        <ul class="detail-list">
+          <li>📍 발견: {{ animal.happenPlace }}</li>
+          <li>📅 출생: {{ animal.age.replace('(년생)', '년생 추정') }}</li>
+          <li>🏠 보호: {{ animal.careNm }}</li>
+        </ul>
+
+        <div class="memo">{{ animal.specialMark }}</div>
+      </div>
+    </div>
+    {% endfor %}
   </body>
 </html>

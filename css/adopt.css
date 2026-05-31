@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Apple SD Gothic Neo", sans-serif;
+}
+
+body {
+  background-color: #faf6ee;
+}
+
+.top-section {
+  background-color: #8a5f41;
+  padding: 60px 20px 140px 20px;
+  text-align: center;
+}
+
+.hero-container {
+  background-color: rgba(255, 255, 255, 0.15);
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 50px 20px;
+  box-shadow: 0 0 8px white;
+}
+
+.hero-content h1 {
+  color: white;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+  color: #ccd67f;
+}
+
+.hero-content p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.bottom-section {
+  background-color: #faf6ee;
+  padding: 0 20px 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-card {
+  background-color: #faf6ee;
+  width: 100%;
+  max-width: 1100px;
+  margin-top: -80px;
+  border-radius: 30px;
+  padding: 60px 40px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+}
+
+.main-title {
+  text-align: center;
+  color: #5c4331;
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+.card-group {
+  display: flex;
+  gap: 25px;
+}
+
+.info-item {
+  flex: 1;
+  background-color: #f3e4c9;
+  border: 1.5px dashed #a77f60;
+  border-radius: 20px;
+  padding: 40px 25px;
+  text-align: center;
+  color: #5c4331;
+}
+
+.info-item .icon {
+  font-size: 35px;
+  margin-bottom: 20px;
+  opacity: 0.7;
+}
+
+.info-item h3 {
+  font-size: 19px;
+  margin-bottom: 15px;
+}
+
+.info-item p {
+  font-size: 14px;
+  line-height: 1.6;
+  word-break: keep-all;
+}
+
+.adopt-section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title-line {
+  font-size: 28px;
+  color: #5c4331;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #ccd67f;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.adopt-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 80px;
+  width: 100%;
+}
+
+.adopt-card {
+  background-color: #fdfbf7;
+  border-radius: 15px;
+  overflow: hidden;
+  flex: 1;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/*부모 relative*/
+.thumbnail-box {
+  position: relative;
+  width: 100%;
+  height: 250px;
+}
+
+.thumbnail-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*자식 absolute*/
+.badge {
+  position: absolute;
+  top: 10px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  color: white;
+}
+
+.gender-male {
+  left: 10px;
+  background-color: #6c9bc0;
+}
+.gender-female {
+  left: 10px;
+  background-color: #e08e8f;
+}
+.neuter {
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.info-content {
+  padding: 20px;
+  color: #5c4331;
+}
+
+.info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+flex .breed {
+  font-size: 20px;
+  font-weight: bold;
+}
+.weight {
+  background-color: #f3e4c9;
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.detail-list {
+  list-style: none;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.memo {
+  background-color: #f8f8f8;
+  border: 1px solid #eee;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 13px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cta-button a {
+  text-decoration: none;
+  color: inherit;
+}
